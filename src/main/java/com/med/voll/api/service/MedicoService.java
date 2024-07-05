@@ -17,7 +17,7 @@ public class MedicoService {
     private MedicoRepository medicoRepository;
 
     public void salvar(Medico medico){
-        medicoRepository.save(medicoDtoRequest);
+        medicoRepository.save(medico);
     }
 
     public Page<MedicoDtoResponse> listar(Pageable paginacao) {
